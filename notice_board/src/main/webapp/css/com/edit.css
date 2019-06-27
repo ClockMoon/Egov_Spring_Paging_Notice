@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+.editContainer{
+	margin-left : 20px;
+}
+.editInput{
+	margin-top : 20px;
+}
+.editContainer input{
+	
+}
+
+#editButtonContainer {
+	margin-top : 20px;
+}
+
+#editButtonContainer button:first-child {
+	margin-right : 10px;
+}
+

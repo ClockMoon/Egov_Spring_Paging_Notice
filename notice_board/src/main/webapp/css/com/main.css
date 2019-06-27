@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+@import "util/reset.css";
+
+@import "header.css";
+
+@import "contents.css";
+
+@import "footer.css";
+
+@import "detail.css";
+
+@import "edit.css";
+
+@import "menu.css";
+
+@import "adminMenu.css";
+
+@import
+	url('https://fonts.googleapis.com/css?family=Do+Hyeon|Gamja+Flower|Jua&display=swap')
+	;
+
+.middleSizeTitle {
+	font-size: 60px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+.hugeSizeText {
+	font-size: 28px;
+	font-family: 'Jua', sans-serif;
+}
+
+.middleSizeText {
+	font-size: 20px;
+	font-family: 'Jua', sans-serif;
+}
+
+.smallSizeText {
+	font-size: 14px;
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.largeLine {
+	border: solid 3px #5eee85;
+}
+
+.editButton{
+	border : none;
+	border-radius : 9px;
+	padding : 10px 20px 10px 20px ;
+	background-color : #8472e9;
+	color : white;
+	cursor : pointer;
+}
+.uploadButton:hover{
+	 opacity: 0.5;
+}

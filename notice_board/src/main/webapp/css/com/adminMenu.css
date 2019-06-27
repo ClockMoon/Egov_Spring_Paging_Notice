@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+#menuSettingContainer{
+	display : flex;
+	justify-content : center;
+	
+}
+
+#firstMenuList{
+	width : 300px;
+	background-color : #fff8dd;
+}
+
+#firstMenuList div {
+	margin-top : 10px;
+	display : flex;
+	cursor : pointer;
+}
+
+#firstMenuList>div:hover {
+	opacity : 0.3;
+}
+
+#firstMenuList div:last-child {
+	margin-bottom : 10px;
+}
+
+#firstMenuList div div {
+	margin-left : 10px;
+}
+
+#secondMenuList{
+	display : flex;
+	flex-direction : column;
+	width : 300px;
+	background-color : #fff8dd;
+}
+
+#secondMenuList div {
+	margin-top : 10px;
+	width : 200px;
+	display : flex;
+	cursor : pointer;
+}
+
+#secondMenuList div div:hover  { /* 버블링 뭐임????  */
+	opacity : 0.3;
+}
+
+
+#firstMenuList div:last-child {
+	margin-bottom : 10px;
+}
+
+#secondMenuList div div {
+	margin-left : 10px;
+	
+}
+
+.menuElementRegist {
+	display : flex;
+	justify-content : space-around;
+}
+
+.menuElementRegist div {
+	margin-bottom : 25px;
+	width : 200px;
+}

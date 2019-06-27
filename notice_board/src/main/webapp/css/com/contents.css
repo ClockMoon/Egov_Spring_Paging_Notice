@@ -1,0 +1,176 @@
+@CHARSET "UTF-8";
+
+.noticeListContainer {
+	margin-top: 15px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	border: 3px solid #bff2ea;
+	border-radius: 8px;
+}
+
+.thumbnail-image {
+	margin-left: 10px;
+}
+
+.thumbnail-image img {
+	border-radius: 8px;
+}
+
+.noticeListTextContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 10px;
+}
+
+.notice-title {
+	cursor: pointer;
+	font-family: 'Jua', sans-serif;
+}
+
+.notice-title:hover {
+	opacity: 0.3;
+}
+
+.notice-Type {
+	font-size: 20px;
+	font-family: 'Gamja Flower', cursive;
+}
+
+.notice-info {
+	font-family: 'Gamja Flower', cursive;
+}
+
+.notice-title span {
+	font-size: 30px;
+}
+
+customButton {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+#create-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+	background-color: #5adeca;
+	border-radius: 10px;
+	align-items: center;
+}
+
+#create-button:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+#create-button span {
+	color: white;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+#create-form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#create-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid #0cf397;
+	border-radius: 8px;
+	width: 500px;
+}
+
+.form-itmes {
+	width: 100%;
+	margin: 10px;
+}
+
+input {
+	width: 100%;
+	border: none;
+	background-color: transparent;
+}
+
+#form-title {
+	font-family: 'Do Hyeon', sans-serif;
+	margin-left: 10px;
+}
+
+#form-description {
+	font-family: 'Do Hyeon', sans-serif;
+	margin-left: 10px;
+	height: 250px;
+}
+
+#form-author {
+	font-family: 'Do Hyeon', sans-serif;
+	margin-left: 10px;
+}
+
+#form-password {
+	font-family: 'Do Hyeon', sans-serif;
+	margin-left: 10px;
+}
+
+#form-image {
+	font-family: 'Jua', sans-serif;
+	margin-left: 10px;
+	background-color: #33BB00;
+	color: #FFFFFF;
+	border-style: solid;
+}
+
+.file-label {
+	margin-left: 10px;
+	font-family: 'Do Hyeon', sans-serif;
+	padding: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #27e0bb;
+	color: white;
+	cursor: pointer;
+}
+
+.file-label input[type=file] {
+	filter: alpha(opacity = 0);
+	opacity: 0;
+	outline: none;
+	width: 0%;
+	height: 0%;
+}
+
+#form-submit {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 95%;
+	font-family: 'Do Hyeon', sans-serif;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+	background: #27e0bb;
+	color: white;
+}
+
+#pageContainer {
+	margin : 20px;
+	display:flex;
+	justify-content : center;
+}
+
+.pageitems {
+	color: black;
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.noticeboard.user.serviceImp.MainMapper">
+
+	<select id="selectNoticeList" resultType="egovMap">
+		SELECT * FROM
+		NOTICE_LIST ORDER BY regist_date DESC LIMIT 10;
+	</select>
+
+	<select id="selectDetailNoice" resultType="egovMap">
+		SELECT * FROM
+		NOTICE_LIST WHERE notice_id = #{noticeId}
+	</select>
+
+	<select id="getNoticePassword" parameterType="String"
+		resultType="String">
+		SELECT notice_password FROM NOTICE_LIST WHERE notice_id =
+		#{noticePassword}
+	</select>
+
+	<insert id="uploadNotice" parameterType="NoticeVO">
+		INSERT INTO notice_list
+		(notice_title, notice_description, notice_type,notice_image_url,
+		display_state, regist_id, regist_date, notice_password, modify_date)
+		VALUES
+		(
+		#{noticeTitle}, #{noticeDescription},
+		'글',#{noticeImageUrlPath}, 'Y',
+		#{registId}, DATE_FORMAT(NOW(),
+		'%Y%m%d%H%i%S'), #{noticePassword},
+		DATE_FORMAT(NOW(), '%Y%m%d%H%i%S')
+		)
+	</insert>
+
+	<update id="editNotice" parameterType="map">
+		UPDATE NOTICE_LIST SET
+		notice_description=#{updateNotice.noticeDescription},
+		notice_type=#{updateNotice.noticeType}
+		WHERE notice_id=#{targetNoticeId}
+	</update>
+	
+	<delete id="deleteNotice" parameterType="String">
+		DELETE FROM NOTICE_LIST WHERE notice_id = #{noticeId}
+	</delete>
+
+
+</mapper>
